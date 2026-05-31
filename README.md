@@ -2,7 +2,7 @@
 
 <h1>CS & Engineering Demos</h1>
 
-<p><em>Interactive visualisations for PhD-level maths and engineering — all in Catppuccin Mocha.</em></p>
+<p><em>Interactive visualisations for CS, maths and engineering — all in Catppuccin Mocha.</em></p>
 
 [![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin-Mocha-cba6f7?style=flat-square&labelColor=1e1e2e&color=cba6f7)](https://github.com/catppuccin/catppuccin)
 [![Python](https://img.shields.io/badge/Python-3.10+-89b4fa?style=flat-square&labelColor=1e1e2e)](https://www.python.org/)
