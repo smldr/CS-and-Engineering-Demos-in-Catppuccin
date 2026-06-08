@@ -117,12 +117,12 @@ ortho_text = fig.text(panel_cx, 0.36, "",
                       ha="center", color=green, fontsize=9, fontweight="bold")
 
 # ── Presets ───────────────────────────────────────────────────────────────────
-fig.text(panel_cx, 0.33, "Presets", ha="center", color=mauve,
+fig.text(panel_cx, 0.37, "Presets", ha="center", color=mauve,
          fontsize=8.5, fontweight="bold")
-preset_ax = fig.add_axes([LEFT, 0.10, 2 * SW + HGAP, 0.21])
+preset_ax = fig.add_axes([LEFT, 0.10, 2 * SW + HGAP, 0.25])
 preset_ax.set_facecolor(surface0)
 presets = RadioButtons(preset_ax,
-    ["Identity", "Rotation 45°", "Shear X", "Stretch 2×3", "Custom"], active=4)
+    ["Identity", "Rotation 45°", "Shear X", "Stretch 2×3", "Symmetric", "Custom"], active=5)
 for lbl in presets.labels:
     lbl.set_color(text_col)
     lbl.set_fontsize(7.5)
@@ -134,6 +134,7 @@ PRESET_MATS = {
                                [np.sin(np.pi / 4),  np.cos(np.pi / 4)]]),
     "Shear X":      np.array([[1.0, 1.0], [0.0, 1.0]]),
     "Stretch 2×3":  np.array([[2.0, 0.0], [0.0, 3.0]]),
+    "Symmetric":    np.array([[2.0, 1.0], [1.0, 2.0]]),
 }
 
 def on_preset(label):
